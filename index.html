@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ - มินตรา สมพงค์</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* ส่วนแสดงรูปภาพหลัก (จำกัด 2 รูป) */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        /* ส่วนข้อมูลส่วนตัว */
+        .profile-info h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .nickname {
+            font-size: 16px;
+            color: #ff6b6b;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: #eee;
+            margin: 20px 0;
+        }
+
+        /* ส่วนความสามารถพิเศษ */
+        .skills-section h2 {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <!-- ส่วนรูปภาพ จำกัดไว้แค่ 2 รูปเท่านั้น -->
+        <div class="image-gallery">
+            <!-- รูปที่ 1: เปลี่ยนลิงก์ใน src เป็นรูปของคุณมิว เช่น image1.jpg -->
+            <img src="miw/S__2551.jpg" alt="มินตรา รูปที่ 1" class="profile-img">
+            <!-- รูปที่ 2: เปลี่ยนลิงก์ใน src เป็นรูปของคุณมิว เช่น image2.jpg -->
+            <img src="miw/S__6676485.jpg" alt="มินตรา รูปที่ 2" class="profile-img">
+        </div>
+
+        <!-- ข้อมูลชื่อและชื่อเล่น -->
+        <div class="profile-info">
+            <h1>มินตรา สมพงค์</h1>
+            <div class="nickname">ชื่อเล่น: มิว</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- ความสามารถพิเศษ -->
+        <div class="skills-section">
+            <h2>ความสามารถพิเศษ (Talents)</h2>
+            <div class="skills-container">
+                <span class="skill-tag">🎤 การร้องเพลง</span>
+                <span class="skill-tag">🎸 เล่นกีตาร์</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
